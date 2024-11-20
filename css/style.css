@@ -1,0 +1,116 @@
+/* Estilos Globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+   
+  /* Navbar */
+  .navbar {
+    background-color: #47139c; /* Tom de roxo mais suave */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid  #47139c; /* Um detalhe mais escuro para a navbar */
+  }
+   
+  .navbar-container span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+   
+  .btn-sair {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    background-color: #ffffff; /* Roxo mais vibrante */
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+   
+  .btn-sair:hover {
+    background-color: #47139c; /* Roxo mais escuro */
+    transform: translateY(-2px);
+  }
+   
+  /* Título da Tabela */
+  h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2rem;
+    color: #6a4c9c;
+    font-weight: 700;
+  }
+   
+  /* Estilos da Tabela */
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Para bordas arredondadas em todos os lados */
+  }
+   
+  th, td {
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+  }
+   
+  th {
+    background-color:  #47139c;
+    color: white;
+    font-weight: 600;
+  }
+   
+  td {
+    background-color: #fafafa;
+  }
+   
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+   
+  /* Links */
+  a {
+    text-decoration: none;
+    color: #6a4c9c;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+   
+  a:hover {
+    color: #732d91;
+    text-decoration: underline;
+  }
+   
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 15px 20px;
+    }
+   
+    .navbar-container span {
+      font-size: 16px;
+    }
+   
+    .btn-sair {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+   
+    table {
+      width: 95%;
+    }
+  }
